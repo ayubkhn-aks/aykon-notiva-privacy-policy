@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Notiva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --text-main: #1F2937;
+            --text-muted: #4B5563;
+            --bg-body: #F9FAFB;
+            --bg-card: #FFFFFF;
+            --border: #E5E7EB;
+            --max-width: 800px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #6366F1;
+                --primary-hover: #4F46E5;
+                --text-main: #F3F4F6;
+                --text-muted: #9CA3AF;
+                --bg-body: #0F172A;
+                --bg-card: #1E293B;
+                --border: #334155;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.025);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--text-main);
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 24px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .highlight-box {
+            background-color: rgba(79, 70, 229, 0.05);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(79, 70, 229, 0.15);
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 24px 16px;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: June 10, 2026</p>
+    </header>
+
+    <section>
+        <p>This privacy policy applies to the <strong>Notiva</strong> mobile application (herein referred to as the "Application") for mobile devices, created by <strong>A&amp;K Tech</strong> (herein referred to as the "Service Provider") as a free service. This service is intended for use "AS IS".</p>
+    </section>
+
+    <div class="highlight-box">
+        <p>🛡️ <strong>Privacy First:</strong> Notiva operates entirely offline. We do not collect, store, transmit, or share any of your personal data, notes, photos, or custom canvases over the internet.</p>
+    </div>
+
+    <section>
+        <h2>Data Collection</h2>
+        <p>The Application runs locally on your device. The Service Provider does not collect, store, or share any personal information with any server or third party.</p>
+        <p>Any content you create within the Application—including text notes, sketches, drawings, and photos—is stored strictly on your device's local storage (using local secure Hive database files). None of this data is ever uploaded or transmitted to external servers.</p>
+    </section>
+
+    <section>
+        <h2>Permissions We Use</h2>
+        <p>To provide its core note-taking, sketching, and alert functions, the Application may request access to the following device features:</p>
+        <ul>
+            <li><strong>POST_NOTIFICATIONS:</strong> Used to display local reminders and custom alerts about your notes and scheduled tasks. No notification data is sent to any server.</li>
+            <li><strong>SCHEDULE_EXACT_ALARM:</strong> Used to schedule local reminders and alerts at precise times. This functions completely offline on your device.</li>
+            <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Used to restore your scheduled local reminders automatically after your device restarts. No data is collected or transmitted.</li>
+            <li><strong>Photo Library & Camera:</strong> Used to let you select or capture photos to insert directly into your notes or custom canvases. These files remain stored locally on your device.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Third Party Services</h2>
+        <p>Notiva does not use any third-party services, analytical trackers, SDKs, or advertising networks. No data is shared with, sold to, or monitored by any third party.</p>
+    </section>
+
+    <section>
+        <h2>Data Security</h2>
+        <p>All notes and settings are stored locally on your device. Since all data is stored locally, you are in full control of your data at all times. We recommend securing your device with PIN/biometric authentication to protect your local data.</p>
+    </section>
+
+    <section>
+        <h2>Children's Privacy</h2>
+        <p>The Application does not collect any data from anyone including children under 13. Our app is intended for users aged 18 and above. Users under the age of 18 should not use this application.</p>
+    </section>
+
+    <section>
+        <h2>Your Rights & Data Deletion</h2>
+        <p>Since all data is stored locally on your device, you have full control over it. You can permanently delete all your data at any time by:</p>
+        <ul>
+            <li>Clearing app data / cache from your device's system settings</li>
+            <li>Uninstalling the Application</li>
+        </ul>
+        <p>These actions are handled by your mobile operating system and are completely irreversible.</p>
+    </section>
+
+    <section>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy occasionally. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>For any questions or concerns about this Privacy Policy, please contact us at:</p>
+        <p>✉️ Email: <strong><a href="mailto:ayubkhn.aks@gmail.com">ayubkhn.aks@gmail.com</a></strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 A&amp;K Tech &nbsp;&middot;&nbsp; Notiva &nbsp;&middot;&nbsp; All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
