@@ -179,11 +179,11 @@
         <h2>Permissions We Use</h2>
         <p>To provide its core note-taking, sketching, and alert functions, the Application may request access to the following device features:</p>
         <ul>
-            <li><strong>POST_NOTIFICATIONS:</strong> Used to display local reminders and custom alerts about your notes and scheduled tasks. No notification data is sent to any server.</li>
+            <li><strong>POST_NOTIFICATIONS:</strong> Used to display local reminders and custom alerts about your notes and scheduled tasks. Required on Android 13 and above. No notification data is sent to any server.</li>
             <li><strong>USE_EXACT_ALARM:</strong> Used to schedule local reminders at the precise time you set. This permission is automatically granted at install time (no user action required) and is appropriate for note-taking and task reminder apps. All alarms fire locally on your device — no data is ever transmitted.</li>
-            <li><strong>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS:</strong> Allows Notiva to deliver reminders reliably even when the device is in battery-saving or idle mode. This ensures you never miss a scheduled note reminder. No personal data is collected or sent anywhere.</li>
-            <li><strong>WAKE_LOCK:</strong> Allows the device CPU to temporarily wake up when a scheduled reminder is triggered so the notification can be displayed immediately.</li>
             <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Used to restore your scheduled local reminders automatically after your device restarts. No data is collected or transmitted.</li>
+            <li><strong>VIBRATE:</strong> Allows the device to vibrate when a reminder notification fires. No data is collected.</li>
+            <li><strong>FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_DATA_SYNC:</strong> Used internally by the Android notification system to ensure that scheduled reminder notifications are delivered reliably even when the app is not running in the foreground. No background data collection or transmission occurs.</li>
             <li><strong>Photo Library &amp; Camera:</strong> Used to let you select or capture photos to insert directly into your notes or custom canvases. These files remain stored locally on your device.</li>
         </ul>
     </section>
